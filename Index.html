@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+        <div class="banner">
+        <img class="logo" src="logo-metropolitano.png" alt="Metropolitano de Lima">
+    </div>
+
+    <nav>
+    <a class="activo" href="#" id="btn-inicio"> inicio </a>
+    <a href="#" id="btn-servicios">servicios</a>
+    <a href="#" id="btn-horarios">horarios</a>
+    <a href="#">tarifas</a>
+    <a href="#">info</a>
+    <a href="#">ayuda</a>
+    </nav>
+
+    <div id="pagina-inicio">
+
+
+    <section class="contenido" id="inicio">
+        <div class="bienvenida">
+            <h2>Bienvenido al Metropolitano de Lima</h2>
+
+            <p>
+            Bienvenido a la página web informativa del Metropolitano de Lima.
+            Aquí encontrarás información sobre estaciones, servicios,
+            horarios, rutas y tarifas del sistema de transporte.
+            Nuestro objetivo es brindarte una experiencia sencilla y rápida
+            para resolver tus consultas y facilitar tus viajes.
+            </p>
+        </div>
+    </section>
+
+    <div class="tarjetas">
+
+    <div class="tarjeta">
+        <div class="icono">🚉</div>
+        <h3>estaciones</h3>
+        <p>Conoce las estaciones disponibles del metroplitano</p>
+    </div>
+
+    <div class="tarjeta">
+        <div class="icono">🚌</div>
+        <h3>Servicios</h3>
+        <p>Consulta los diferentes servicios y rutas</p>
+    </div>
+
+    <div class="tarjeta">
+        <div class="icono">⌚</div>
+        <h3>horarios</h3>
+        <p>Revisa los horarios de los servicios.</p>
+    </div>
+
+    <div class="tarjeta">
+        <div class="icono">💳</div>
+        <h3>Tarifas</h3>
+        <p>Consulta las tarijas y tipos de pago</p>
+    </div>
+
+</div> 
+
+<section class="info-metropolitano">
+    <h2>🚍 Sobre el Metropolitano</h2>
+
+    <p>
+        El Metropolitano es un sistema de transporte público que conecta
+        distintos distritos de Lima mediante una ruta troncal que actualmente
+        se extiende desde Chimpu Ocllo hasta Matellini.
+    </p>
+
+    <div class="datos">
+        <div class="dato">
+            <h3>🚉 Estaciones</h3>
+            <p>Mas de 50 estaciones a lo largo de la ruta</p>
+        </div>
+
+        <div class="dato">
+            <h3>🚌 Servicios</h3>
+            <p>Rutas regulares, expresos y servicios especiales.</p>
+        </div>
+
+        <div class="dato">
+            <h3>🗺️ Recorrido</h3>
+            <p>Desde Chimpu Ocllo hasta Matellini</p>
+        </div>
+    </div>
+</section>
+
+<section class="mapa-metropolitano">
+
+    <h2>🗺️ Mapa del Metropolitano</h2>
+
+    <p>
+        Selecciona una estación para consultar su información.
+    </p>
+
+    <div class="mapa-contenedor">
+        <div class="ruta">
+
+            
+        <button class="estacion">1. Terminal Chimpu Ocllo</button>
+        <button class="estacion">2. Los Incas</button>
+        <button class="estacion">3. Andrés Belaunde</button>
+        <button class="estacion">4. 22 de Agosto</button>
+        <button class="estacion">5. Las Vegas</button>
+        <button class="estacion">6. Universidad</button>
+        <button class="estacion">7. Terminal Naranjal</button>
+
+        <button class="estacion">8. Izaguirre</button>
+        <button class="estacion">9. Pacífico</button>
+        <button class="estacion">10. Independencia</button>
+        <button class="estacion">11. Los Jazmines</button>
+        <button class="estacion">12. Tomás Valle</button>
+        <button class="estacion">13. El Milagro</button>
+        <button class="estacion">14. Honorio Delgado</button>
+
+        <button class="estacion">15. UNI</button>
+        <button class="estacion">16. Parque del Trabajo</button>
+        <button class="estacion">17. Caquetá</button>
+        <button class="estacion">18. Dos de Mayo</button>
+        <button class="estacion">19. Ramón Castilla</button>
+        <button class="estacion">20. Tacna</button>
+        <button class="estacion">21. Jirón de la Unión</button>
+
+        <button class="estacion">22. Colmena</button>
+        <button class="estacion">23. Quilca</button>
+        <button class="estacion">24. España</button>
+        <button class="estacion">25. Estación Central</button>
+        <button class="estacion">26. Estadio Nacional</button>
+        <button class="estacion">27. México</button>
+        <button class="estacion">28. Canadá</button>
+        <button class="estacion">29. Javier Prado</button>
+
+        <button class="estacion">30. Canaval Moreyra</button>
+        <button class="estacion">31. Aramburú</button>
+        <button class="estacion">32. Domingo Orué</button>
+        <button class="estacion">33. Angamos</button>
+        <button class="estacion">34. Ricardo Palma</button>
+        <button class="estacion">35. Benavides</button>
+        <button class="estacion">36. 28 de Julio</button>
+
+        <button class="estacion">37. Plaza de Flores</button>
+        <button class="estacion">38. Balta</button>
+        <button class="estacion">39. Bulevar</button>
+        <button class="estacion">40. Estadio Unión</button>
+        <button class="estacion">41. Escuela Militar</button>
+        <button class="estacion">42. Terán</button>
+        
+        <button class="estacion">43. Rosario de Villa</button>
+        <button class="estacion">44. Terminal Matellini</button>
+
+        
+        </div>
+
+        <div class="panel-estacion" id="panel-estacion">
+
+            <h3>📍 Selecciona una estacion</h3>
+
+            <p>
+                Haz clic en un punto del mapa para 
+                ver la informacion de la estacion.
+            </p>
+        </div>
+    </div>
+
+        <section class="Comentarios">
+
+            <h2>💬 Comentarios de los pasajeros</h2>
+
+            <div class="tarjetas-comentarios" id="tarjetas-comentarios">
+
+        <div class="comentario">
+        <h3>⭐⭐⭐⭐</h3>
+        <p>
+            El servicio es comodo y facilita el traslado hacia el centro de Lima
+        </p>
+        <span>- Pasajero</span>
+        </div>
+
+        <div class="comentario">
+            <h3>⭐⭐⭐⭐⭐</h3>
+            <p>
+                Muy util para estudiantes y trabajadores.
+            </p>
+            <span>- Usuario Diario</span>
+        </div>
+
+        </div>
+    </section>
+
+    <div class="publicar-comentario">
+
+    <button id="btn-comentario">
+        📋Publicar un comentario
+    </button>
+
+    <div id="formulario-comentario" class="formulario-comentario">
+
+    <h3> 💬 Escribe tu comentario</h3>
+
+    <textarea
+    id="comentario"
+    placeholder="Cuentanos tu experiencia en el Metropolitano..">
+</textarea>
+
+<button id="btn-publicar">
+    Publicar
+</button>
+
+</div>
+    
+</div>
+        
+    </div>
+
+
+
+
+
+
+
+<section id="servicios">
+
+    <div class="intro-servicios">
+
+        <h2>🚌 Servicios del Metropolitano</h2>
+
+        <p>
+            El Metropolitano de Lima cuenta con diversos servicios
+            diseñados para facilitar el traslado de miles de pasajeros
+            cada día. Conoce las rutas expresos, servicios especiales
+            y opciones disponibles para optimizar tu viaje.
+        </p>
+
+    </div>
+
+    <div class="tarjetas-servicios">
+
+<div class="tarjeta-servicio">
+
+    <img src="metropolitano-regA.jpg" alt="Bus del Metropolitano">
+
+    <div class="contenido-tarjeta">
+
+        <h3>🚍 Regular A</h3>
+
+        <p>
+            Servicio regular que concecta diferentes
+            estaciones del Metropolitano de Lima.
+        </p>
+
+        <button>Ver detalles</button>
+    </div>
+</div>
+
+
+
+<div class="tarjeta-servicio">
+
+    <img src="regB.jpg" alt="Bus regular B">
+
+    <div class="contenido-tarjeta">
+
+        <h3>🚍 Regular B</h3>
+
+        <p>
+            Servicio regular que concecta diferentes 
+            estaciones del Metropolitano de Lima
+        </p>
+
+        <button> Ver detalles</button>
+    </div>
+</div>
+
+ <div class="tarjeta-servicio">
+        <img src="metropolitano_9.jpg" alt="Bus Regular C">
+
+        <div class="contenido-tarjeta">
+
+            <h3>🚌 Regular C</h3>
+
+            <p>
+                Servicio regular que conecta diferentes
+                estaciones del Metropolitano de Lima.
+            </p>
+
+            <button>Ver detalles</button>
+        </div>
+ </div>  
+ 
+ <div class="tarjeta-servicio">
+
+    <img src="Captura de pantalla 2026-09-11 221944.png" alt="Bus Regular D">
+
+    <div class="contenido-tarjeta">
+
+        <h3>🚌 Regular D</h3>
+
+        <p>
+            Servicio regular que conecta diferentes
+            estaciones del Metropolitano de Lima.
+        </p>
+
+        <button>Ver detalles</button>
+
+    </div>
+
+</div>
+
+<h2 class="titulo-expresos">
+    🚍 Expresos del Metropolitano
+</h2>
+
+<div class="tarjetas-expresos">
+
+    <div class="tarjeta-expreso">
+
+        <img src="Diseno-sin-titulo-2025-01-07T140241.098.jpg" alt="Expreso 1">
+
+        <div class="contenido-expreso">
+
+            <h3>🚍 Expreso 1</h3>
+
+            <p>
+                Conecta Central con Matellini de manera rápida,
+                realizando paradas en estaciones principales.
+            </p>
+
+            <button>Ver detalles</button>
+
+        </div>
+
+    </div>
+
+    <div class="tarjeta-expreso">
+
+        <img src="1-3-780x470.jpg" alt="Expreso 2">
+
+        <div class="contenido-expreso">
+
+            <h3>🚍 Expreso 2</h3>
+
+            <p>
+                Servicio expreso que conecta diferentes
+                estaciones del Metropolitano.
+            </p>
+
+            <button>Ver detalles</button>
+
+        </div>
+
+    </div>
+
+
+
+<div class="tarjeta-expreso"> 
+    
+    <img src="images44.jpg" alt="Expreso 3">
+    
+    <div class="contenido-expreso">
+         <h3>🚌 Expreso 3</h3> 
+         
+         <p> Servicio expreso que conecta diferentes estaciones del Metropolitano de Lima, permitiendo realizar el recorrido de manera más rápida. </p> 
+
+         <button>Ver detalles</button> 
+        </div> 
+    </div>
+
+    <div class="tarjeta-expreso"> 
+
+        <img src="6499e6debcb9301a7350c555.jpg" alt="Bus Expreso 5"> 
+
+        <div class="contenido-expreso">
+             <h3>🚌 Expreso 5</h3> 
+             <p> Servicio expreso que conecta diferentes estaciones del Metropolitano de Lima, 
+                permitiendo realizar el recorrido de manera más rápida. </p> 
+                
+                <button>Ver detalles</button> 
+            </div> 
+        </div>
+
+        <div class="tarjeta-expreso"> 
+
+            <img src="images999.jpg" alt="Bus Expreso 6"> 
+
+            <div class="contenido-expreso"> 
+
+                <h3>🚌 Expreso 6</h3>
+                
+                <p> Servicio expreso que conecta diferentes estaciones del Metropolitano de Lima, permitiendo realizar el recorrido de manera más rápida. </p> 
+                
+                <button>Ver detalles</button>
+            
+            </div> 
+        
+        </div>
+
+        <div class="tarjeta-expreso"> 
+            
+            <img src="images8888.jpg" alt="Bus Expreso 7"> 
+            
+            <div class="contenido-expreso"> 
+                
+                <h3>🚌 Expreso 7</h3> 
+                
+                <p> Servicio expreso que conecta diferentes estaciones del Metropolitano de Lima, permitiendo realizar el recorrido de manera más rápida. </p> 
+                
+                <button>Ver detalles</button> 
+            
+            </div> 
+        
+        </div>
+
+        <div class="tarjeta-expreso"> 
+            
+            <img src="images767676.jpg" alt="Bus Expreso 8"> 
+            
+            <div class="contenido-expreso"> 
+                
+                <h3>🚌 Expreso 8</h3> 
+                
+                <p> Servicio expreso que conecta diferentes estaciones del Metropolitano de Lima, permitiendo realizar el recorrido de manera más rápida. </p> 
+                
+                <button>Ver detalles</button> 
+            
+            </div> 
+        
+        </div>
+
+                <div class="tarjeta-expreso"> 
+            
+            <img src="P3FZVRC5TND77CU2JIOFA4V4NA.jpg" alt="Bus Expreso 9"> 
+            
+            <div class="contenido-expreso"> 
+                
+                <h3>🚌 Expreso 9</h3> 
+                
+                <p> Servicio expreso que conecta diferentes estaciones del Metropolitano de Lima, permitiendo realizar el recorrido de manera más rápida. </p> 
+                
+                <button>Ver detalles</button> 
+            
+            </div> 
+        
+        </div>
+
+        <h2 class="titulo-expresos">
+    🚍 Nuevos Expresos del Metropolitano
+</h2>
+
+  <div class="tarjeta-expreso"> 
+            
+            <img src="b5a2a1af-8383-4742-b2a0-eaeeb5a630c5.png" alt="Bus Expreso 10" class="arreglo2-img">
+            
+            <div class="contenido-expreso"> 
+                
+                <h3>🚌 Expreso 10</h3> 
+                
+                <p> Servicio expreso que conecta diferentes estaciones del Metropolitano de Lima, permitiendo realizar el recorrido de manera más rápida. </p> 
+                
+                <button>Ver detalles</button> 
+            
+            </div> 
+        
+        </div>
+
+        <div class="tarjeta-expreso"> 
+            
+            <img src="92ee93e6-cc9b-47ab-8f7a-6953df7cfc0f.png" alt="Bus Expreso 11" class="arreglo3-img">
+            
+            <div class="contenido-expreso"> 
+                
+                <h3>🚌 Expreso 11</h3> 
+                
+                <p> Servicio expreso que conecta diferentes estaciones del Metropolitano de Lima, permitiendo realizar el recorrido de manera más rápida. </p> 
+                
+                <button>Ver detalles</button> 
+            
+            </div> 
+        
+        </div>
+
+        <div class="tarjeta-expreso"> 
+            
+            <img src="images77777.jpg" alt="Bus Expreso 12" class="arreglo-img">
+            
+            <div class="contenido-expreso"> 
+                
+                <h3>🚌 Expreso 12</h3> 
+                
+                <p> Servicio expreso que conecta diferentes estaciones del Metropolitano de Lima, permitiendo realizar el recorrido de manera más rápida. </p> 
+                
+                <button>Ver detalles</button> 
+            
+            </div> 
+        
+        </div>
+
+        <div class="tarjeta-expreso"> 
+            
+            <img src="240408.png" alt="Bus Expreso 13" class="img-mapa">
+            
+            <div class="contenido-expreso"> 
+                
+                <h3>🚌 Expreso 13</h3> 
+                
+                <p> Servicio expreso que conecta diferentes estaciones del Metropolitano de Lima, permitiendo realizar el recorrido de manera más rápida. </p> 
+                
+                <button>Ver detalles</button> 
+            
+            </div> 
+        
+        </div>
+
+                <h2 class="titulo-expresos">
+    Servicios especiales del Metropolitano
+</h2>
+
+        <div class="tarjeta-expreso"> 
+            
+            <img src="image3333333.jpg" alt="Bus super expreso">
+            
+            <div class="contenido-expreso"> 
+                
+                <h3>🚌 Súper Expreso</h3> 
+                
+                <p> Servicio expreso que conecta diferentes estaciones del Metropolitano de Lima, permitiendo realizar el recorrido de manera más rápida. </p> 
+                
+                <button>Ver detalles</button> 
+            
+            </div> 
+        
+        </div>
+
+
+                <div class="tarjeta-expreso"> 
+            
+            <img src="Super-Expreso-Norte-del-Metropolitano.jpg" alt="Bus super expreso Norte">
+            
+            <div class="contenido-expreso"> 
+                
+                <h3>🚌 Súper Expreso Norte</h3> 
+                
+                <p> Servicio expreso que conecta diferentes estaciones del Metropolitano de Lima, permitiendo realizar el recorrido de manera más rápida. </p> 
+                
+                <button>Ver detalles</button> 
+            
+            </div> 
+        
+        </div>
+
+                        <div class="tarjeta-expreso"> 
+            
+            <img src="lechucero.jpg" alt="Bus lechucero">
+            
+            <div class="contenido-expreso"> 
+                
+                <h3>🚌 lechucero</h3> 
+                
+                <p> Servicio expreso que conecta diferentes estaciones del Metropolitano de Lima, permitiendo realizar el recorrido de manera más rápida. </p> 
+                
+                <button>Ver detalles</button> 
+            
+            </div> 
+        
+        </div>
+
+
+
+</div>
+
+</div> 
+
+
+<div class="boton-alimentadores">
+
+    <a href="#alimentadores" id="btn-alimentadores">
+        🚌 Ver Rutas Alimentadoras
+    </a>
+
+</div>
+
+</section>
+
+<section id="alimentadores"> 
+    
+    <div class="encabezado-alimentadores"> 
+        
+        <h2>🚌 Rutas Alimentadoras del Metropolitano</h2> 
+        
+        <p> Conoce las diferentes rutas alimentadoras que conectan distintas zonas de Lima con las estaciones del Metropolitano, facilitando el traslado de los pasajeros hacia el sistema troncal. </p>
+    
+    </div> 
+
+    <div class="buscador-alimentadores">
+
+    <h3>🔎 Explora las rutas aquí</h3>
+
+    <input
+        type="text"
+        id="buscador-rutas"
+        placeholder="Buscar ruta, zona o código..."
+    >
+
+</div>
+
+<div id="resultados-rutas"></div>
+<div id="info-ruta"></div>
+<div id="recorrido-ruta"></div>
+</section>
+
+<section id="horarios">
+
+    <div class="encabezado-horarios">
+        <h2>⌚ Horarios del Metropolitano</h2>
+        <p>
+            Elige un día para ver los horarios de cada servicio,
+            con su rumbo norte y su rumbo sur.
+        </p>
+    </div>
+
+    <div class="selector-dias" id="selector-dias"></div>
+
+    <div class="filtros-horarios" id="filtros-horarios"></div>
+
+    <h3 class="titulo-dia" id="titulo-dia"></h3>
+
+    <div class="lista-horarios" id="lista-horarios"></div>
+    
+    <h2>🚌 Horarios de Alimentadores</h2>
+
+<div class="filtros-horarios" id="filtros-alim"></div>
+
+<h3 id="titulo-dia-alim"></h3>
+
+<div class="lista-horarios" id="lista-alim"></div>
+
+</section>
+
+
+<footer class="footer">
+
+    <img src="logo-metropolitano.png" alt="Metropolitano de Lima">
+
+    <p>
+        Información sobre estaciones, rutas, horarios, servicios y tarifas.
+    </p>
+
+    <p>
+        © 2026 Metropolitano de Lima. Proyecto académico de ISIL.
+    </p>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
